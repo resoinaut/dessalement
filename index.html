@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>La dessalement</title>
+
+	<link rel="stylesheet" href="index.css" type="text/css">
+	<script src="index.js" type="text/javascript" defer></script>
+</head>
+<body>
+	<nav>
+		<div class="title">
+			<div onclick="window.location.reload()">La dessalement</div>
+		</div>
+		<div class="options">
+			<button type="button" onclick="document.getElementsByClassName('header-img')[0].scrollIntoView()">INTRO</button>
+			<button type="button" onclick="document.getElementsByClassName('method1-section')[0].scrollIntoView()">DISTILLATION</button>
+			<button type="button" onclick="document.getElementsByClassName('method2-section')[0].scrollIntoView()">MEMBRANES</button>
+			<button type="button" onclick="document.querySelector('div.info-section.darker').scrollIntoView()">EXEMPLES</button>
+			<button type="button">QUIZ</button>
+		</div>
+	</nav>
+	<main>
+		<img class="header-img" alt="water desalination plant" src="water-desalination-plant.webp">
+		<div class="info-section">
+			<div>
+				<div class="title"><span>Une manque d'eau potable...</span></div>
+				<div class="info">
+					Il existe des problèmes concernant l’eau potable à travers le monde. Par exemple, il existe des manques d’eau douce dans des régions près de la mer, tels que le Golfe Persique, en Afrique du Nord, ou en Australie. En addition, certaines îles isolées, surtout dans les Caraïbes, ont des problèmes d’approvisionnement d’eau car l’eau qui les entourent est trop salée pour la consommation.
+					<br><br>
+					Ce phénomène n’est certainement pas limité au pays et aux îles, mais dérange aussi des très grandes villes comme São Paulo et Mumbai. Le manque d’eau douce dans certaines zones arides cause une incapacité de cultiver des aliments, et tout ceci entraîne des conflits pour l'accès à l’eau, notamment dans des régions comme le Moyen-Orient à cause du rivière du Nile, Tigre et de l’Euphrate.
+				</div>
+			</div>
+		</div>
+		<div class="info-section">
+			<div>
+				<div class="title"><span>C'est quoi la dessalement de l'eau?</span></div>
+				<div class="info">
+					Il existe plusieurs solutions à ces problèmes. Premièrement, on pourrait tout collectivement contribuer à la gestion durable de l’eau en limitant notre consommation, en recyclant l’eau et en soutenant le développement de technologies de dessalement, ce dernier étant le sujet de ce projet.
+					<br><br>
+					La dessalement de l’eau consiste simplement à enlever le sel de l’eau de mer pour le rendre potable. Il existe quelques actions concrètes qu’on peut faire pour promouvoir le dessalement de l’eau: encourager les gouvernements et les entreprises à investir dans l’infrastructure pour effectuer ces processus, soutenir la recherche et le développement dans ce domaine, et sensibiliser le public à l’importance du dessalement. Bien que le dessalement soit une solution importante pour l’approvisionnement de l’eau douce, il est essentiel de s’assurer que comment on le met en œuvre est durable sur le plan environnemental en réduisant l’impact sur les écosystèmes aquatiques et en utilisant des sources d’énergie renouvelables.
+					<br><br>
+					Maintenant, commençons avec comment la dessalement fonctionne. Il existe primairement deux méthodes pour le faire: la distillation et l’usage de l'osmose à travers les membranes. Explorons-les...
+				</div>
+			</div>
+		</div>
+		<div class="method1-section">
+			<img id="method1-image1" class="active" alt="seawater-intake" src="seawater-intake.webp">
+			<img id="method1-image2" alt="water desalination machinery" src="seawater-filtration.jpg">
+			<img id="method1-image3" alt="water desalination machinery" src="seawater-heating.jpg">
+			<img id="method1-image4" alt="water desalination machinery" src="flash-evaporation.jpg">
+			<img id="method1-image5" alt="water desalination machinery" src="freshwater-condensation.avif">
+			<img id="method1-image6" alt="brine discharge pipe" src="brine-discharge.jpg">
+			<div class="island">
+				<div class="levels">
+					<button id="method1-selection1" class="active"></button>
+					<button id="method1-selection2"></button>
+					<button id="method1-selection3"></button>
+					<button id="method1-selection4"></button>
+					<button id="method1-selection5"></button>
+					<button id="method1-selection6"></button>
+				</div>
+				<div id="method1-text1" class="info active">
+					<div class="number">1/6</div>
+					<div class="title">LA PRISE D'EAU</div>
+					<div class="text">La dessalement commence toujours avec la collection de l’eau de mer. Ceci devrait être complété avec un système de collection qui ne dérange pas la vie aquatique.</div>
+				</div>
+				<div id="method1-text2" class="info">
+					<div class="number">2/6</div>
+					<div class="title">LA FILTRATION</div>
+					<div class="text">L’eau de mer qui était collectée devrait être filtrée pour enlever tous les matériaux indésirables tels que les roches et l’algue. Si ceci n’était pas fait, les systèmes suivants qui ont été conçus spécifiquement pour régler l’eau salée pourraient être endommagés.</div>
+				</div>
+				<div id="method1-text3" class="info">
+					<div class="number">3/6</div>
+					<div class="title">LA CHAUFFAGE</div>
+					<div class="text">L’eau est réchauffée à un état dans lequel elle peut être efficacement évaporée. En même temps, il subit la pressurisation qui l’empêche de le faire en ce moment. Alors l’eau atteint un température élevée mais ne s’évapore pas.</div>
+				</div>
+				<div id="method1-text4" class="info">
+					<div class="number">4/6</div>
+					<div class="title">L'ÉVAPORATION</div>
+					<div class="text">L’eau salée subit un processus qui s'appelle “l’évaporation flash à plusieurs étapes” dans lequel il se passe dans plusieurs chambres et subit l’évaporation flash. Cette eau devient de la vapeur, perdant le sel et les impuretés.</div>
+				</div>
+				<div id="method1-text5" class="info">
+					<div class="number">5/6</div>
+					<div class="title">LA CONDENSATION</div>
+					<div class="text">La vapeur d’eau distillée condense sur une surface froide dans l’eau fraîche qui est prête pour la consommation.</div>
+				</div>
+				<div id="method1-text6" class="info">
+					<div class="number">6/6</div>
+					<div class="title">LA RECYCLAGE</div>
+					<div class="text">La saumure, l’eau salée qui n’a pas évaporée, est recyclée et utilisée pour réchauffer l’eau de mer qui s’en vient. Ceci rend le système plus efficace en termes d'énergie requiert. Après, il est retournée à la mer, comme dans cette photo.</div>
+				</div>
+			</div>
+			<div class="method">Méthode #1 | La distillation</div>
+		</div>
+		<div class="method2-section">
+			<div class="header"><span>Méthode #2 | Les membranes</span></div>
+			<div class="info">
+				<div id="method2-information1" class="information active">
+					<div class="header">LA PRISE D'EAU</div>
+					<div class="text">La dessalement commence toujours avec la collection de l’eau de mer. Comme toujours, ceci devrait être complété avec un système de collection qui ne dérange pas la vie aquatique.</div>
+				</div>
+				<div id="method2-information2" class="information">
+					<div class="header">LA FILTRATION</div>
+					<div class="text">L’eau doit être filtrée pour enlever des matériaux indésirables. Sinon, les membranes dans la prochaine étape qui devraient déjà être remplacées périodiquement deviendraient endommagées.</div>
+				</div>
+				<div id="method2-information3" class="information">
+					<div class="header">L'OSMOSE</div>
+					<div class="text">L’eau salée filtrée subit l’osmose inverse à travers une tube long dans de la pression haute. Ceci enlève le sel et crée deux produits: l’eau fraîche et la saumure (de l’eau encore plus salée). La saumure est recyclée puis retournée à la mer.</div>
+				</div>
+				<div id="method2-information4" class="information">
+					<div class="header">LA TRAITEMENT</div>
+					<div class="text">L’eau fraîche produite est trop pure pour la consommation et aurait une saveur qui semblerait bizarre. Il faut rajouter des minéraux à l’eau pour régler ceci et le rendre prêt pour la consommation.</div>
+				</div>
+				<div class="diagram">
+					<svg viewBox="0 0 1278 603" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M305 79L1065 383L1276.5 248L578.5 1.5L305 79Z" fill="#7BA7FE"/>
+						<path d="M733.5 602L1065 383L305 79L2 171L733.5 602Z" fill="#333333"/>
+						<path d="M1065 383L733.5 602L2 171L305 79M1065 383L305 79M1065 383L1276.5 248L578.5 1.5L305 79" stroke="black"/>
+						<path d="M661 206.5C657.4 207.3 601.5 212.167 574 214.5C571.333 214.833 565.5 215 563 214C559 213 500.667 201.5 493 200.5L471.5 196.5L461 195.5L397 206C397.833 201.703 396.8 194.544 388 195.5L461 185L478 186.5L490 188.5L590 179.5C600 177.1 601.167 185.659 600.5 190.239L609 189.5C619.8 186.7 621.5 194.442 621 198.663L653 195.5C661.094 194.7 661.706 202.5 661 206.5Z" fill="#D9D9D9"/>
+						<path d="M528.5 196.5L567 204L614.5 199.305L621 198.663M528.5 196.5L568.75 193L600.5 190.239M528.5 196.5L505.5 192M621 198.663L653 195.5C661.094 194.7 661.706 202.5 661 206.5C657.4 207.3 601.5 212.167 574 214.5C571.333 214.833 565.5 215 563 214C559 213 500.667 201.5 493 200.5L471.5 196.5L461 195.5L397 206C397.833 201.703 396.8 194.544 388 195.5L461 185L478 186.5L490 188.5L590 179.5C600 177.1 601.167 185.659 600.5 190.239M621 198.663C621.5 194.442 619.8 186.7 609 189.5L600.5 190.239" stroke="black"/>
+						<path d="M426 202V224L388.695 231.21C408.126 240.458 441.376 256.038 459.5 266L435.5 272.5L366.5 235.5L307 247L244 209.415L230.407 201.305L219 194.5V174L274.5 160L322 158L426 202Z" fill="#D9D9D9"/>
+						<path d="M307 247V224M307 247L366.5 235.5M307 247L244 209.415L230.407 201.305L219 194.5V174M307 224L369.5 205M307 224L219 174M369.5 205L426 202M369.5 205L274.5 160M426 202V224L388.695 231.21M426 202L322 158L274.5 160M219 174L274.5 160M366.5 235.5L435.5 272.5L459.5 266C441.376 256.038 408.126 240.458 388.695 231.21M366.5 235.5C365.833 231.667 365 224 374 224C375.679 224.979 381.144 227.617 388.695 231.21" stroke="black"/>
+						<path d="M460.5 344L396 305V282.5L589 232L621.5 234L655.5 256V282.5L542.488 318.142C557.433 325.784 581 339 597 347.5L582.5 352.5L527.5 322.869L460.5 344Z" fill="#D9D9D9"/>
+						<path d="M460.5 344L396 305V282.5M460.5 344V312M460.5 344L527.5 322.869M396 282.5L432 287.5M396 282.5L589 232L621.5 234M432 287.5L460.5 312M432 287.5L621.5 234M460.5 312L655.5 256M655.5 256V282.5L542.488 318.142M655.5 256L621.5 234M527.5 322.869L582.5 352.5L597 347.5C581 339 557.433 325.784 542.488 318.142M527.5 322.869C526.667 319.913 525.6 314.1 532 312.5C533.947 313.717 537.681 315.684 542.488 318.142" stroke="black"/>
+						<path d="M534.5 406V370L796 275.5L881.5 286L987 338.5V375L733 536L534.5 406Z" fill="#D9D9D9"/>
+						<path d="M534.5 370V406L733 536M534.5 370L623.5 402M534.5 370L796 275.5L881.5 286M623.5 402L733 480M623.5 402L881.5 286M733 480V536M733 480L987 338.5M733 536L987 375V338.5M987 338.5L881.5 286" stroke="black"/>
+						<circle id="method2-selection1" class="active" cx="663.5" cy="124.5" r="28.5" stroke-width="18"/>
+						<circle id="method2-selection2" cx="285.5" cy="86.5" r="28.5" stroke-width="18"/>
+						<circle id="method2-selection3" cx="360.5" cy="377.5" r="28.5" stroke-width="18"/>
+						<circle id="method2-selection4" cx="585.5" cy="506.5" r="28.5" stroke-width="18"/>
+						<path class="text" d="M666.736 134H659.44V133.256L661.696 131.48V116.936L659.2 116.096L659.68 115.136H666.976V115.88L664.696 117.656V132.176L667.216 133.04L666.736 134Z" fill="black"/>
+						<path class="text" d="M283.736 96H276.44V95.256L278.696 93.48V78.936L276.2 78.096L276.68 77.136H283.976V77.88L281.696 79.656V94.176L284.216 95.04L283.736 96ZM294.142 96H286.846V95.256L289.102 93.48V78.936L286.606 78.096L287.086 77.136H294.382V77.88L292.102 79.656V94.176L294.622 95.04L294.142 96Z" fill="black"/>
+						<path class="text" d="M353.736 388H346.44V387.256L348.696 385.48V370.936L346.2 370.096L346.68 369.136H353.976V369.88L351.696 371.656V386.176L354.216 387.04L353.736 388ZM364.142 388H356.846V387.256L359.102 385.48V370.936L356.606 370.096L357.086 369.136H364.382V369.88L362.102 371.656V386.176L364.622 387.04L364.142 388ZM374.549 388H367.253V387.256L369.509 385.48V370.936L367.013 370.096L367.493 369.136H374.789V369.88L372.509 371.656V386.176L375.029 387.04L374.549 388Z" fill="black"/>
+						<path class="text" d="M578.736 517H571.44V516.256L573.696 514.48V499.936L571.2 499.096L571.68 498.136H578.976V498.88L576.696 500.656V515.176L579.216 516.04L578.736 517ZM599.102 500.656L592.31 516.232L589.814 517.456L582.806 500.56L580.406 499.096L580.886 498.136H588.182V498.88L585.926 500.632L591.71 514.576L597.806 500.536L593.582 499.096L594.062 498.136H601.358V498.88L599.102 500.656Z" fill="black"/>
+					</svg>
+				</div>
+			</div>
+		</div>
+		<div class="info-section darker">
+			<div>
+				<div class="title"><span>RAS #1<br>ENTHALPIE DE RÉACTION</span></div>
+				<div class="info">
+					abc
+				</div>
+			</div>
+		</div>
+		<div class="info-section darker">
+			<div>
+				<div class="title"><span>RAS #2<br>CATALYSEURS</span></div>
+				<div class="info">
+					abc
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+</html>
