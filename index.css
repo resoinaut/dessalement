@@ -98,6 +98,22 @@ main > div.info-section {
 	padding-bottom: 32px;
 }
 
+main > div.info-section.secondary {
+	background-color: var(--isle-clr);
+	justify-content: left;
+}
+
+main > div.info-section.secondary > div {
+	border-radius: unset;
+	border-top-right-radius: 32px;
+	border-bottom-right-radius: 32px;
+}
+
+main > div.info-section.secondary > div img {
+	width: 100%;
+	margin-top: 32px;
+}
+
 main > div.info-section.darker > div {
 	background-color: #333333;
 }
